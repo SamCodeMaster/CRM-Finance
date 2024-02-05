@@ -1,10 +1,11 @@
 import { Component, inject } from '@angular/core';
 import { ToastrService } from 'ngx-toastr';
+import {MatButtonModule} from '@angular/material/button';
 
 @Component({
   selector: 'app-pruebas',
   standalone: true,
-  imports: [],
+  imports: [MatButtonModule],
   templateUrl: './pruebas.component.html',
   styleUrl: './pruebas.component.css'
 })
