@@ -67,6 +67,7 @@ class Kernel extends HttpKernel
         'user_exist' => \App\Http\Middleware\UserExistToAddNewLogin::class,
         'rol_exist' => \App\Http\Middleware\RolNameExist::class,
         'empleado_exist' => \App\Http\Middleware\EmpleadoDniExist::class,
+        'cliente_exist' => \App\Http\Middleware\ClienteDniExist::class,
 
     ];
 }

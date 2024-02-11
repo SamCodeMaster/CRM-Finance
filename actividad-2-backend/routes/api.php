@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Cliente;
 use App\Http\Controllers\Empleado;
 use App\Http\Controllers\Login;
 use App\Http\Controllers\Rol;
@@ -49,6 +50,17 @@ Route::prefix('empleado')->controller(Empleado::class)->group(
         Route::middleware('empleado_exist')->post('/update/{pId}', 'update');
         Route::get('/findById/{pId}', 'findById');
         Route::get('/findByRol/{pRol}', 'findByRol');
+    }
+);
+
+Route::prefix('cliente')->controller(Cliente::class)->group(
+    function () {
+        Route::get('/getAll', 'getAll');
+        Route::middleware('cliente_exist')->post('/add', 'add');
+        Route::get('/delete/{pId}', 'delete');
+        Route::middleware('cliente_exist')->post('/update/{pId}', 'update');
+        Route::get('/findById/{pId}', 'findById');
+        Route::get('/findByDni/{pDni}', 'findByDni');
     }
 );
 
