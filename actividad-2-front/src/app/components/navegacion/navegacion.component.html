@@ -1,1 +1,10 @@
-<p>navegacion works!</p>
+		<nav class="menu_principal">
+		    <ul>
+		        <li [routerLinkActive]="['seleccionado']" [routerLinkActiveOptions]="{exact:true}"><a [routerLink]="['/']">Inicio</a></li>
+				<li [routerLinkActive]="['seleccionado']"><a [routerLink]="['/empleados']">Empleados</a></li>
+				<li [routerLinkActive]="['seleccionado']"><a [routerLink]="['/comercializacion']" >Comercializacion</a></li>
+				<li [routerLinkActive]="['seleccionado']"><a [routerLink]="['/referenciacion']">Referenciacion</a></li>
+				<li [routerLinkActive]="['seleccionado']"><a [routerLink]="['/cobranza']" >Cobranza</a></li>
+				<li [routerLinkActive]="['seleccionado']"><a [routerLink]="['/roles']" >Roles</a></li>
+		    </ul>
+		</nav>
