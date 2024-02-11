@@ -145,11 +145,6 @@ class Empleado extends Controller
             $empleado = DB::select('select empleados.* from empleados join logins on empleados.login_id = logins.id join roles on logins.role_id = roles.id '.
                                         'where roles.nombre_rol = ?', [$pRol]);
             
-            
-            // table('empleados')
-            //             ->join('logins', 'empleados.login_id', '=', 'logins.id')
-            //             ->join('roles', 'logins.role_id', '=', 'roles.id')
-            //             ->where('empleados.*', 'roles.nombre_rol', '?',);
             if($empleado){
                 $response->setStatusCode(ResultResponse::SUCCESS_CODE);
                 $response->setMessage(ResultResponse::TKT_SUCCESS_CODE);
