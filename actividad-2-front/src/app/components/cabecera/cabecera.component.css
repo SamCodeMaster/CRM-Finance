@@ -1,0 +1,45 @@
+header div.fondo_titulo {
+    background-image: url('https://images.ctfassets.net/vh0nkz8jvxsb/6gNRzVEgydbc1pntyjpLp8/bfec7c1218943c37bade22865dd595ad/shutterstock_1428150203.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+    line-height: 150px;
+    text-align: right;
+    color: white;
+
+}
+
+header div.fondo_titulo span{
+    font-weight: bold;
+    color: white;
+    vertical-align: middle;
+    line-height: normal;
+    font-size: 36px;
+    background-color: rgba(214, 122, 18, 0.205);
+}
+
+header.titulo_principal h1{
+    margin: 0px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    background-color: white;
+
+}
+
+
+
+.contenedor {
+    background-image: url(img1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 0px;
+    height: 100px;
+    line-height: 100px;
+}
+
+ 
+
+
