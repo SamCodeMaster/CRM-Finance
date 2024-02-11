@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Login;
+use App\Http\Controllers\Rol;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -23,6 +24,16 @@ Route::prefix('login')->controller(Login::class)->group(
     function () {
         Route::post('/authenticate', 'authenticate');
         Route::middleware('user_exist')->post('/add', 'add');
+        Route::get('/delete/{pId}', 'delete');
+        Route::post('/update/{pId}', 'update');
+        Route::get('/findById/{pId}', 'findById');
+    }
+);
+
+Route::prefix('rol')->controller(Rol::class)->group(
+    function () {
+        Route::get('/getAll', 'getAll');
+        Route::middleware('rol_exist')->post('/add', 'add');
         Route::get('/delete/{pId}', 'delete');
         Route::post('/update/{pId}', 'update');
         Route::get('/findById/{pId}', 'findById');
