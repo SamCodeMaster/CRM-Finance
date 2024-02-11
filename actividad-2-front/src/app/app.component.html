@@ -1,7 +1,15 @@
-<app-cabecera></app-cabecera>
-<app-navegacion></app-navegacion>
-<router-outlet></router-outlet>
-<app-pie></app-pie>
+@if(usuarioActivo == false){
+    <app-login></app-login>
+}
+@else {
+    <app-cabecera></app-cabecera>
+    <app-navegacion></app-navegacion>
+    <router-outlet></router-outlet>
+    <app-pie></app-pie>
+}
+
+
+
 
 
 
