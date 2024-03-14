@@ -1,0 +1,1 @@
+export type RequestStatus = 'inicial' | 'cargando' | 'exitoso' | 'fallo'
