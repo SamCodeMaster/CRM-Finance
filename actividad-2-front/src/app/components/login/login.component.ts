@@ -1,10 +1,13 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { ContenedorModule } from '../../contenedor/contenedor.module';
+import { FormsModule} from '@angular/forms';
+
+
 
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [ContenedorModule],
+  imports: [FormsModule, CommonModule],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })
