@@ -15,6 +15,6 @@ import { LoginComponent } from './components/login/login.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  usuarioActivo:boolean = false;
+  usuarioActivo:boolean = true;
   title = 'actividad-2-front';
 }
