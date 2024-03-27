@@ -1,8 +1,12 @@
 <?php
 
 use App\Http\Controllers\Cliente;
+use App\Http\Controllers\Cobranza;
+use App\Http\Controllers\Comercializacion;
+use App\Http\Controllers\Credito;
 use App\Http\Controllers\Empleado;
 use App\Http\Controllers\Login;
+use App\Http\Controllers\Referenciacion;
 use App\Http\Controllers\Rol;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -63,6 +67,52 @@ Route::prefix('cliente')->controller(Cliente::class)->group(
         Route::get('/findByDni/{pDni}', 'findByDni');
     }
 );
+
+Route::prefix('credito')->controller(Credito::class)->group(
+    function (){
+        Route::get('/getAll', 'getAll');
+    }
+);
+
+Route::prefix('comercializacion')->controller(Comercializacion::class)->group(
+    function (){
+        Route::get('/getAll', 'getAll');
+        Route::post('/add', 'add');
+        Route::post('/update','update');
+        Route::get('/delete/{pId}', 'delete');
+        Route::get('/findById/{pId}', 'findById');
+        Route::get('/findByEmpleadoId/{pEmpleadoId}', 'findByEmpleadoId');
+        Route::get('/findByClienteId/{pClienteId}', 'findByClienteId');
+        Route::get('/findByCreditoId/{pCreditoId}', 'findByCreditoId');
+
+    }
+);
+
+Route::prefix('referenciacion')->controller(Referenciacion::class)->group(
+    function (){
+        Route::get('/getAll', 'getAll');
+        Route::post('/add', 'add');
+        Route::post('/update','update');
+        Route::get('/delete/{pId}', 'delete');
+        Route::get('/findById/{pId}', 'findById');
+        Route::get('/findByEmpleadoId/{pEmpleadoId}', 'findByEmpleadoId');
+    }
+);
+
+
+Route::prefix('cobranza')->controller(Cobranza::class)->group(
+    function (){
+        Route::get('/getAll', 'getAll');
+        Route::post('/add', 'add');
+        Route::post('/update','update');
+        Route::get('/delete/{pId}', 'delete');
+        Route::get('/findById/{pId}', 'findById');
+    }
+);
+
+
+
+
 
 // Route::post('/login/authenticate', function () {
 //     $response = ["status"=>0,"msg"=>"msg"];
