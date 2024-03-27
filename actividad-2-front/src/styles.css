@@ -2,3 +2,26 @@
 @import 'ngx-toastr/toastr';
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.drawer-button{
+    width: 100%;
+    border: 0;
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+.drawer-icon{
+    vertical-align: middle;
+    margin-right: 5px;
+    color: #097575;
+}
+
+.drawer-main-content{
+    text-align: center;
+    height: 500px;
+
+}
+
+
