@@ -4,20 +4,15 @@ header div.fondo_titulo {
     background-size: cover;
     background-position: center;
     height: 150px;
-    line-height: 150px;
-    text-align: right;
+    text-align: center;
     color: white;
-
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    
 }
 
-header div.fondo_titulo span{
-    font-weight: bold;
-    color: white;
-    vertical-align: middle;
-    line-height: normal;
-    font-size: 36px;
-    background-color: rgba(214, 122, 18, 0.205);
-}
+
 
 header.titulo_principal h1{
     margin: 0px;
@@ -31,13 +26,49 @@ header.titulo_principal h1{
 
 
 
-.contenedor {
-    background-image: url(img1.jpg);
+#imagen_logo {
+    background-image: url(/assets/images/img1.jpg);
+    background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
-    margin: 0px;
+    margin-top: 10px;
+    margin-left: 7px;
+    height: 70px;
+    
+}
+
+#logo{
+   
+    background-color: white;
     height: 100px;
-    line-height: 100px;
+    width: 100px;
+    margin-top: 20px;
+    margin-left: 10px;
+    border-radius: 50px;
+    overflow: hidden;
+    
+}
+
+#contenedor_texto{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    width: 400px;
+    height: 40px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 20px;
+    border-radius: 50px;
+    
+   
+}
+
+#texto_titulo{
+    margin-top: auto;
+    margin-bottom: auto;
+    color: #060072;
+    font-size: xx-large;
 }
 
  
