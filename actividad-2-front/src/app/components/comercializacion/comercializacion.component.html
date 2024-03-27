@@ -1,9 +1,32 @@
-<body>
-    <div class="contenedor">
-        <p>comercializacion works!</p>
-    </div>
-
-</body>
+<mat-drawer-container autosize>
+    <mat-drawer #drawer mode="side" opened="true" class="side-nav-class">
+        <mat-nav-list class="drawer-nav-list-item">
+            <mat-list-item class="drawer-list-item">
+                <button mat-button class="drawer-button"><mat-icon class="drawer-icon">person_add</mat-icon>Nuevo Cliente</button>
+            </mat-list-item>
+            <mat-list-item class="drawer-list-item">
+                <button mat-button class="drawer-button"><mat-icon class="drawer-icon">search</mat-icon>Ver Cliente</button>
+            </mat-list-item>
+            <mat-list-item class="drawer-list-item">
+                <button mat-button class="drawer-button"><mat-icon class="drawer-icon">delete</mat-icon>Eliminar Cliente</button>
+            </mat-list-item>
+            <mat-list-item class="drawer-list-item">
+                <button mat-button class="drawer-button"><mat-icon class="drawer-icon">edit</mat-icon>Modificar Cliente</button>
+            </mat-list-item>
+            <mat-list-item class="drawer-list-item">
+                <button mat-button class="drawer-button"><mat-icon class="drawer-icon">money</mat-icon>Credito</button>
+            </mat-list-item>
+            <mat-list-item class="drawer-list-item">
+                <button mat-button class="drawer-button"><mat-icon class="drawer-icon">exit_to_app</mat-icon>Cerrar Sesión</button>
+            </mat-list-item>
+        </mat-nav-list>
+    </mat-drawer>
+    <mat-drawer-content>
+       <div class="drawer-main-content">
+        
+       </div>
+    </mat-drawer-content>
+  </mat-drawer-container>
 
 
 
